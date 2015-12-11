@@ -1,0 +1,149 @@
+body{
+    font-family: 'Open Sans',"Segoe UI",Sans-Serif;
+    background: #333;
+}
+
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index: 2;
+    border-radius: 0;
+}
+
+.navbar.navbar-default{
+    background: #c0392b;
+    border:0;
+    -webkit-box-shadow: 0 2px 7px 0 #333;
+    -moz-box-shadow: 0 2px 7px 0 #333;
+    box-shadow: 0 2px 7px 0 #333;
+}
+
+.navbar-default .navbar-header > .navbar-brand{
+    color:#fff;
+}
+
+.navbar .navbar-header > .navbar-brand img{
+    display:inline-block;
+}
+
+.navbar-default .navbar-nav > li > a{
+    color:#fff;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.navbar-default .navbar-nav > li >a:hover{
+    background: #e74c3c;
+    color:#fff;
+}
+
+#top-heading{
+    z-index:-1;
+    top:50px;
+    width:100%;
+    background:url('../img/heading_back.jpg') center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    height:200px;
+    color:#fff;
+    padding:0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.fixed{
+    position:fixed;
+}
+
+.relative{
+    position:relative;
+}
+
+#top-heading .content{
+    background: rgba(20,20,20,0.2);
+    width:100%;
+    height:100%;
+    padding-top:10%;
+}
+
+#top-heading h1,
+#top-heading h4{
+    font-weight: normal;
+    margin:0;
+}
+
+#wrapper{
+    position:relative;
+    top:250px;
+    background: #fff;
+    -webkit-box-shadow: 0 -2px 7px 0 #333;
+    -moz-box-shadow: 0 -2px 7px 0 #333;
+    box-shadow: 0 -2px 7px 0 #333;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    padding:2em 0 0 0;
+}
+
+#footer{
+    background: #333;
+    color:#fff;
+    padding:3em 0;
+}
+
+.icon{
+    width:32px;
+    height:32px;
+    display: inline-block;
+}
+
+.icon-user{
+    background: url("../img/user_sm.png") center center no-repeat;
+}
+
+.icon-official{
+    background: url("../img/official_sm.png") center center no-repeat;
+}
+
+.well{
+    border:0;
+    border-radius: 0;
+    background: #333;
+    color:#fff;
+}
+
+.form-container{
+    background:#EEE;
+    max-width:300px;
+    margin:auto auto;
+    position:absolute;
+    padding:3em 1em;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height: 400px;
+    border-radius: 4px;
+}
+
+@media (min-width:768px) {
+    #top-heading{
+        height: 400px;
+    }
+
+    #wrapper{
+        top:450px;
+    }
+}
